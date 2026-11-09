@@ -1,0 +1,18 @@
+{
+  "name": "card-wallet-manager",
+  "version": "1.1.0",
+  "description": "卡包管家 - 中国主流银行卡与多账户记账管理系统 (Android APK 工程)",
+  "private": true,
+  "scripts": {
+    "init:android": "npm install && npx cap add android && npx cap sync android",
+    "open:android": "npx cap open android",
+    "build:apk": "npx cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  }
+}

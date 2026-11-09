@@ -1,0 +1,9 @@
+{
+  "appId": "com.cardwallet.manager",
+  "appName": "卡包管家",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": true
+  }
+}

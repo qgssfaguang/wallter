@@ -1,0 +1,10 @@
+{
+  "name": "猫娘钱包",
+  "short_name": "猫娘钱包",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#4f46e5",
+  "orientation": "portrait",
+  "version": "1.5"
+}
