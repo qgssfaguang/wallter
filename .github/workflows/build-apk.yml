@@ -23,17 +23,21 @@ jobs:
           distribution: 'temurin'
           java-version: 17
 
-
       - name: Install dependencies & Sync Android
         run: |
           rm -rf node_modules
           npm install
           npx cap sync android
 
+      - name: Setup Gradle 8.4
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.4
+
       - name: Build Debug APK
         run: |
           cd android
-          gradle assembleDeBug
+          gradle assembleDebug
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
