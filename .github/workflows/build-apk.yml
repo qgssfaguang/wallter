@@ -24,10 +24,10 @@ jobs:
           java-version: 17
 
 
-      - name: Install dependencies & Add Android platform
+      - name: Install dependencies & Sync Android
         run: |
+          rm -rf node_modules
           npm install
-          npx cap add android
           npx cap sync android
 
       - name: Build Debug APK
